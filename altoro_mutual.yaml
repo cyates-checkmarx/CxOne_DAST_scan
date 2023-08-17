@@ -38,14 +38,14 @@ env:
     progressToStdout: true
   vars: {}
 jobs:
-  - parameters:
-      maxAlertsPerRule: 0
-      scanOnlyInScope: true
-      maxBodySizeInBytesToScan: 0
-      enableTags: false
-    rules: []
-    name: "passiveScan-config"
-    type: "passiveScan-config"
+  # - parameters:
+  #     maxAlertsPerRule: 0
+  #     scanOnlyInScope: true
+  #     maxBodySizeInBytesToScan: 0
+  #     enableTags: false
+  #   rules: []
+  #   name: "passiveScan-config"
+  #   type: "passiveScan-config"
   # - parameters:
   #     apiFile: "./alroto_mutual.json"
   #     apiUrl: ""
@@ -53,27 +53,27 @@ jobs:
   #     context: "Default Context"
   #   name: "openapi"
   #   type: "openapi"
-  - parameters: {}
-    name: "passiveScan-wait"
-    type: "passiveScan-wait"
-  - parameters:
-      context: "Default Context"
-      user: "test_user"
-      policy: ""
-      maxRuleDurationInMins: 0
-      maxScanDurationInMins: 0
-      addQueryParam: false
-      delayInMs: 0
-      handleAntiCSRFTokens: false
-      injectPluginIdInHeader: false
-      scanHeadersAllRequests: false
-      threadPerHost: 10
-    policyDefinition:
-      defaultStrength: "medium"
-      defaultThreshold: "medium"
-      rules: []
-    name: "activeScan"
-    type: "activeScan"
+  # - parameters: {}
+  #   name: "passiveScan-wait"
+  #   type: "passiveScan-wait"
+  # - parameters:
+  #     context: "Default Context"
+  #     user: "test_user"
+  #     policy: ""
+  #     maxRuleDurationInMins: 0
+  #     maxScanDurationInMins: 0
+  #     addQueryParam: false
+  #     delayInMs: 0
+  #     handleAntiCSRFTokens: false
+  #     injectPluginIdInHeader: false
+  #     scanHeadersAllRequests: false
+  #     threadPerHost: 10
+  #   policyDefinition:
+  #     defaultStrength: "medium"
+  #     defaultThreshold: "medium"
+  #     rules: []
+  #   name: "activeScan"
+  #   type: "activeScan"
   - parameters:
       template: "traditional-pdf"
       reportDir: ""
