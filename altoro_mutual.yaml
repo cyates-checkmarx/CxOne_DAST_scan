@@ -62,6 +62,13 @@ jobs:
       runOnlyIfModern: false
     name: "spiderAjax"
     type: "spiderAjax"
+  # - parameters:
+  #     apiFile: "./alroto_mutual.json"
+  #     apiUrl: ""
+  #     targetUrl: "http://testfire.net/"
+  #     context: "Default Context"
+  #   name: "openapi"
+  #   type: "openapi"
   - parameters: {}
     name: "passiveScan-wait"
     type: "passiveScan-wait"
